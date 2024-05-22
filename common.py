@@ -43,3 +43,5 @@ async def __interval(sign: signal, sec, func, *args, **kwargs):
         await asyncio.sleep(sec)
         if sign.getnum() != -1:
             func(*args, **kwargs)
+        else:
+            break
